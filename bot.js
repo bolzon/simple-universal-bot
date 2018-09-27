@@ -1,7 +1,8 @@
-const builder = require('botbuilder')
-const connector = new builder.ConsoleConnector().listen()
-const bot = new builder.UniversalBot(connector)
+
+const builder = require('botbuilder');
+const connector = new builder.ConsoleConnector().listen();
+const bot = new builder.UniversalBot(connector);
 
 bot.dialog('/', session => {
-    session.send('hello world')
-})
+    session.send('hello world');
+});
