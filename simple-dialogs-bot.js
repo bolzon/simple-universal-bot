@@ -12,7 +12,7 @@ bot.dialog('/', session => {
 
 bot.dialog('/howare', (session, args, next) => {
   session.send('How are you?');
-  session.beginDialog('/howare');
+  session.beginDialog('/letstalk');
 });
 
 bot.dialog('/letstalk', (session, args, next) => {
